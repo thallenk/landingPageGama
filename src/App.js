@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Routes from './routes';
+import { createGlobalStyle } from 'styled-components'
+import img from '../src/assets/images/products/background.png'
+
+
+
+const GlobalStyle = createGlobalStyle`
+
+      //Reset CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url(${img});
+    //background-size: cover;
+    font-family: sans-serif;
+    width: 1100px;
+    margin-left: auto;
+    margin-right:auto;
+    
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+`;
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <Routes/>
+    </>
   );
 }
 
