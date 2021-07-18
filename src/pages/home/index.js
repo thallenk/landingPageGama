@@ -2,9 +2,8 @@ import React, { useState }from 'react'
 import * as S from './styled.js'
 import Product  from '../../components/Products/index'
 import Header from '../../components/Main/main'
-import Time from '../../components/time/index'
+import Countdown from "../../components/Time/index"
 import img1 from "../../assets/images/products/logo.png" 
-import UpdateCountDown from "../../components/time/time"
 
 let listEmail = []
 function Home() {
@@ -21,16 +20,17 @@ function Home() {
     return(
         <>
         <Header/>
-        {setInterval(UpdateCountDown,1000)}
-        <Time/>
-        
+        <Countdown/>
         <S.MainBox>
+            <div div1>
             <S.Box>
                 <a href="https://www.instagram.com/sheilaoticas/" target="blank">
-                    <img src={img1}/>
+                    <img src={img1}/> @sheilaoticas
                 </a>
 
             </S.Box>
+            </div>
+            <div div2>
             <S.Box>
                 <S.Form>
                     <p>Cadastre seu email para receber as demais promoções!</p>
@@ -41,6 +41,8 @@ function Home() {
                     </S.Button>
                 </S.Form>    
             </S.Box>
+            </div>
+
             
         </S.MainBox> 
    

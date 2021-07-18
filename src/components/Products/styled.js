@@ -8,6 +8,7 @@ export const ProductGrid = styled.main`
     margin-right: auto;
     max-width: 500px;
     padding: 30px;
+    display:block;
     
     img {
       height: 200px;
@@ -45,6 +46,12 @@ export const Box = styled.div`
     }
     & ul li {
       list-style-type:none;
+      .icones{
+        & img{
+          width:2px;
+          height:2px;
+        }
+      }
       
     }
     @media(min-width:860px){
@@ -72,7 +79,6 @@ export const Caixa = styled.div`
       float:right;
       font-weight:800px;
       font-family: sans-serif;
-      background-color:#600066;
       @media(min-width:860px){
         margin-top:-25px;
 
@@ -83,8 +89,34 @@ export const Caixa = styled.div`
       margin-top:10px;
       color: white;
       text-align:center;
-    }
+      }
 
     }
+
+`
+export const Footer = styled.footer`
+    width:50%;
+    max-width: 800px;
+    height:30px;
+    font-family: sans-serif;
+    background-color:rgb(102,0,102);
+    float: left;
+    & p {
+      @media(min-width:806px){
+        margin-left:150px;
+        margin-right: 50px;
+      }
+
+      text-align:center;
+      margin-top:10px;
+      margin-bottom:1px;
+    }
+  @media(min-width:806px){
+    width:auto;
+    max-width:1300px;
+    margin-left: -130px;
+    margin-top: 0px;
+    
+  }
 
 `

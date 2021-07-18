@@ -4,20 +4,26 @@ import img1 from "../../assets/images/products/logo.png"
 export const Form = styled.div`
     margin-bottom:0;
     text-align: center;
+    margin-top: 10%;
+    
     & p {
         color: yellow;
         font-weight: 600;
         margin-top:30px;
         @media(min-width:860){
-            margin-bottom:0;
+            margin-bottom:50px;
             text-align: center;
+            margin-top:0px;
+
+            
             
             
 
         }
     }
-    
-   
+    @media(min-width:860){
+       margin-bottom:10%;
+    } 
    
 `
 export const MainBox = styled.main`
@@ -26,24 +32,27 @@ export const MainBox = styled.main`
     margin-left: 27%;
     margin-right: auto;
     max-width: 500px;
-    margin-bottom: 250px;
 
     @media(min-width:860px){
     max-width:1110px;
     display:grid;
-    grid-template-areas: "div1 div2 div3";
+    margin-top: 20px;
+    grid-template-areas: "div1 div2";
     //largura da primeira coluna, segunda e terceira coluna respectivamente
     grid-template-columns: auto;
     grid-template-rows: 50px auto auto; 
     width:40%;
     margin-left: 27%;
     margin-right: auto;
-    max-width: 500px;
     margin-bottom: 150px;
 
     img{
       height: 200px;
       width: 200px;
+      @media(min-width:860px){
+        height: 200px;
+        width: 200px;
+      }
     }
   }
  
@@ -54,13 +63,26 @@ export const Box = styled.div`
     display:flex;
     //flex-wrap: wrap;
     flex-direction: column;
-    height: 200px;
-    width:230px;
+    height: 290px;
+    width:420px;
+    margin-left:-16%;
     @media(min-width:860px){
       width:230px;
+      height: 200px;
       display:flex;
+      margin-left:0%;
       //flex-wrap: wrap;
       flex-direction: column;
+      & a{
+          color:white;
+          font-weight: 800;
+          @media(min-width:860px){
+          color:white;
+          font-weight: 800;
+          margin-top:0px;
+          }
+      }
+
     }
 
 `
@@ -82,6 +104,7 @@ export const Input = styled.input`
     }
     @media(min-width:860){
             margin-left:40%;
+           
             
             
 

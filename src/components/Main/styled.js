@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 export const Main = styled.main`
     width:40%;
-    margin-left: 28%;
+    margin-left: 20%;
     margin-right: auto;
     max-width: 800px;
     padding: 20px;
     font-family: sans-serif;
-    background-color:#600066;
+    background-color:rgb(102,0,102);
     & h1 {
             color: white;
             font-weight: 800;
@@ -32,7 +32,10 @@ export const Main = styled.main`
         max-width:2000px;
         margin-left: auto;
         margin-right:auto;
-        width:1555px;
+        width:1355px;
+        align-items: center;
+        //width:auto;
+        text-align:center;
         height:100px;
         margin-left:-130px;
         height: 120px;
